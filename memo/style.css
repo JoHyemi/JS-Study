@@ -1,0 +1,14 @@
+.memoBox {
+  width: 200px;
+  min-height: 200px;
+  font-size: 20px;
+  background-color: aliceblue;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.memos {
+  display: flex;
+  flex-wrap: wrap;
+}
