@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>carousel slider</title>
+    <style>
+      .showcase {
+        width: 500px;
+        height: 300px;
+        overflow: hidden;
+      }
+      .img-wrap {
+        display: flex;
+      }
+      .img-wrap img {
+        width: 500px;
+        height: 300px;
+      }
+    </style>
+</head>
+<body>
+    <h1>carousel slider</h1>
+    <div class="showcase">
+      <div class="img-wrap">
+        <img src="./img/orangetree.jpg" id="lastClone" alt="orange tree">
+        <img src="./img/blue1.jpg" alt="drawing of blue city">
+        <img src="./img/bluecat.jpg" alt="cats with blue city">
+        <img src="./img/DSC02149.jfif" alt="cat">
+        <img src="./img/fish.jpg" alt="fish">
+        <img src="./img/orangetree.jpg" alt="orange tree">
+        <img src="./img/blue1.jpg" id="firstClone" alt="drawing of blue city">
+      </div>
+    </div>
+    <button class="btn-left">left</button>
+    <button class="btn-right">right</button>
+
+    <script src="./script.js"></script>
+</body>
+</html>
