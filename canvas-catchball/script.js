@@ -9,12 +9,6 @@ let colorArray = [
   '#F9E79F'
 ]
 
-let selectedBox;
-
-const pop = document.createElement('div');
-pop.className = 'pop';
-document.body.appendChild(pop);
-
 canvas.addEventListener('click', function(e){
 for(let i =0; i < circleArray.length; i++){
   box = circleArray[i];
@@ -24,10 +18,7 @@ for(let i =0; i < circleArray.length; i++){
     e.layerY < (box.y + box.radius))
     {
       circleArray.splice(i, 1);
-
-    } else {
-      pop.style.display = 'none';
-    }
+    } 
 }
 })
 
