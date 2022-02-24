@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>modal</title>
+  <style>
+    :root {
+      --display-change: none;
+    }
+    .notModal {
+      margin-top: 150px;
+      text-align: center;
+    }
+    .notModal::after {
+      display: var(--display-change);
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-color: rgba(10, 10, 10, .2);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .modal {
+      width: 400px;
+      height: 400px;
+      padding-top: 50px;
+      box-sizing: border-box;
+      background-color: rgb(248, 248, 209);
+      position: absolute;
+      top: 50vh;
+      left: 50vw;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      display: var(--display-change);
+    }
+    .modal p {
+      font-size: 40px;
+      margin-bottom: 100px;
+    }
+
+    button {
+      width: 100px;
+      height: 50px;
+      border-radius: 25px;
+      border: none;
+      background-color: greenyellow;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    button:hover {
+      background-color: yellowgreen;
+    }
+  </style>
+</head>
+<body>
+  <div class="notModal">
+      <h1>this is modal</h1>
+      <button class="btn-open">hello</button>
+  </div>
+  <div class="modal">
+    <p>hello i'm modal</p>
+    <button class="btn-close">bye</button>
+  </div>
+
+  <script>
+    const openBtn = document.querySelector('.btn-open');
+    const closeBtn = document.querySelector('.btn-close');
+
+    //모달 열기
+    openBtn.addEventListener('click', ()=> {
+      //가상요소에 접근해서 스타일바꾸기
+      document.documentElement.style.setProperty('--display-change', 'block');
+    })
+
+    //모달 닫기 - 버튼 클릭했을 때
+    closeBtn.addEventListener('click', ()=> {
+      document.documentElement.style.setProperty('--display-change', 'none');
+    })
+    //모달 닫기 - 모달 밖을 클릭했을 때
+    window.addEventListener('click', (e)=> {
+      if(document.documentElement.style.getPropertyValue('--display-change') === 'block') {
+        if(e.target.classList.contains('notModal')){
+          document.documentElement.style.setProperty('--display-change', 'none');
+        }
+      }
+      })
+
+  </script>
+</body>
+</html>
