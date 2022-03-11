@@ -1,8 +1,11 @@
 # JS-Study
 
+알잘딱깔센 자바스크립트
+
 ### notion 링크
 
 > https://morning-heart-e2a.notion.site/JS-Study-f037c206e538471f9a9f1915b2139a60
+> https://bit.ly/3I3coYY
 
 ### github pages
 >  https://johyemi.github.io/JS-Study/
