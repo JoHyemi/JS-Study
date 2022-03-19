@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star rating</title>
+  <link rel="stylesheet" href="./reset.css">
+  <style>
+    .movie-box {
+      background-color: #333333;
+      width: 608px;
+      height: 500px;
+      border-radius: 20px;
+      position: relative;
+      padding-top: 66px;
+      box-sizing: border-box;
+      margin: 100px auto;
+      
+    }
+    .movie-poster {
+      width: 281px;
+      height: 396px;
+      border-radius: 10px;
+      position: absolute;
+      top: 52px;
+      left: -64px;
+
+    }
+    .about-movie {
+      margin-left: 266px;
+    }
+    .movie-genre {
+      font-size: 16px;
+      color: #bdbdbd;
+      margin-bottom: 13px;
+    }
+    .movie-title {
+      font-size: 32px;
+      font-weight: bold;
+      color: #fff;
+      margin-bottom: 114px;
+    }
+    .icon-wrap {
+      display: flex;
+      margin-bottom: 22px;
+    }
+    .icon-up, .icon-heart{
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      border: solid 2px #fff;
+      margin-right: 20px;
+    }
+    .icon-up img , .icon-heart img{
+      width: 26px;
+      margin: 17px;
+    }
+    .star-aver {
+      color: #fff;
+      margin-bottom: 16px;
+    }
+    .star-wrap img {
+      width: 51px;
+    }
+    .mystar-rate {
+      display: flex;
+      align-items: center;
+    }
+    .img-cancle {
+      width: 22px;
+      height: 22px;
+      margin-left: 12px;
+    }
+  </style>
+</head>
+<body>
+  <section class="movie-box">
+    <img class="movie-poster" src="./image/poster.jpg" alt="파이썬 부트캠프 영화 포스터">
+    <div class="about-movie">
+      <p class="movie-genre">드라마 | 전체이용가</p>
+      <h1 class="movie-title">파이썬 부트캠프</h1>
+      <div class="icon-wrap">
+        <div class="icon-up"><img src="./image/thumbsup.png" alt=""></div>
+        <div class="icon-heart"><img src="./image/heart.png" alt=""></div>
+      </div>
+      <p class="star-aver">별점 평균</p>
+      <div class="mystar-rate">
+        <div class="star-wrap">
+          <img class="stars" src="./image/star3.png" alt="">
+          <img src="./image/star3.png" alt="">
+          <img src="./image/star3.png" alt="">
+          <img src="./image/star3.png" alt="">
+          <img src="./image/star3.png" alt="">
+        </div>
+        <img class="img-cancle" src="./image/x-circle.png" alt="">
+      </div>
+      
+    </div>
+  </section>
+</body>
+</html>

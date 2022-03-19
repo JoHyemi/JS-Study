@@ -29,3 +29,7 @@ JS를 사용한 캐러셀 슬라이더
 2022-02-24<br>
 모달 만들기
 > https://johyemi.github.io/JS-Study/modal
+
+### 개인연습과제 6
+2022-03-19~<br>
+> https://johyemi.github.io/JS-Study/starrating
